@@ -43,14 +43,14 @@
 
                         $json= json_decode( $doc->specialization);
                         $str2='';
-                        foreach ($config as $config)
+                        foreach ($config as $con)
                         {
 
 
                             foreach ($json as $key => $value) {
 
-                                if ($value == $config->id) {
-                                    $str2 = $str2 . $config->specialization.',';
+                                if ($value == $con->id) {
+                                    $str2 = $str2 . $con->specialization.',';
                                 }
                             }
                         }

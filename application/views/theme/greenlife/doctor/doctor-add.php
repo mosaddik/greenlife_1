@@ -11,7 +11,7 @@
 
     <div class="container">
 
-        <form class="well form-horizontal" action="http://localhost/greenlife/index.php/doctor_controller/save_changes" method="POST"  id="contact_form" enctype="multipart/form-data">
+        <form class="well form-horizontal" action="http://localhost/greenlife/index.php/doctor_controller/save_changes" method="POST"  id="doctor_form" enctype="multipart/form-data">
             <fieldset>
 
 

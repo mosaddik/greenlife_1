@@ -1,0 +1,880 @@
+[1mdiff --git a/.idea/workspace.xml b/.idea/workspace.xml[m
+[1mindex c3a4ac5..ec6d12d 100644[m
+[1m--- a/.idea/workspace.xml[m
+[1m+++ b/.idea/workspace.xml[m
+[36m@@ -1,7 +1,16 @@[m
+ <?xml version="1.0" encoding="UTF-8"?>[m
+ <project version="4">[m
+   <component name="ChangeListManager">[m
+[31m-    <list default="true" id="24a398bb-c402-4dec-805a-e6c882bae726" name="Default" comment="" />[m
+[32m+[m[32m    <list default="true" id="24a398bb-c402-4dec-805a-e6c882bae726" name="Default" comment="">[m
+[32m+[m[32m      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/theme/greenlife/scrpits/jquery.validate.min.js" />[m
+[32m+[m[32m      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/theme/greenlife/scrpits/validation.js" />[m
+[32m+[m[32m      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/theme/greenlife/validation.js" />[m
+[32m+[m[32m      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />[m
+[32m+[m[32m      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/theme/greenlife/doctor/doctor-list.php" afterPath="$PROJECT_DIR$/application/views/theme/greenlife/doctor/doctor-list.php" />[m
+[32m+[m[32m      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/theme/greenlife/footer.php" afterPath="$PROJECT_DIR$/application/views/theme/greenlife/footer.php" />[m
+[32m+[m[32m      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/theme/greenlife/header.php" afterPath="$PROJECT_DIR$/application/views/theme/greenlife/header.php" />[m
+[32m+[m[32m      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/theme/greenlife/patient/patient-add.php" afterPath="$PROJECT_DIR$/application/views/theme/greenlife/patient/patient-add.php" />[m
+[32m+[m[32m    </list>[m
+     <ignored path="greenlife.iws" />[m
+     <ignored path=".idea/workspace.xml" />[m
+     <ignored path=".idea/dataSources.local.xml" />[m
+[36m@@ -29,52 +38,58 @@[m
+   </component>[m
+   <component name="FileEditorManager">[m
+     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">[m
+[31m-      <file leaf-file-name="patient.php" pinned="false" current-in-tab="false">[m
+[31m-        <entry file="file://$PROJECT_DIR$/application/controllers/patient.php">[m
+[32m+[m[32m      <file leaf-file-name="doctor_controller.php" pinned="false" current-in-tab="false">[m
+[32m+[m[32m        <entry file="file://$PROJECT_DIR$/application/controllers/doctor_controller.php">[m
+           <provider selected="true" editor-type-id="text-editor">[m
+[31m-            <state relative-caret-position="2703">[m
+[31m-              <caret line="159" column="0" selection-start-line="159" selection-start-column="0" selection-end-line="159" selection-end-column="0" />[m
+[32m+[m[32m            <state relative-caret-position="-242">[m
+[32m+[m[32m              <caret line="50" column="21" selection-start-line="50" selection-start-column="15" selection-end-line="50" selection-end-column="21" />[m
+               <folding />[m
+             </state>[m
+           </provider>[m
+         </entry>[m
+       </file>[m
+[31m-      <file leaf-file-name="doctor_controller.php" pinned="false" current-in-tab="false">[m
+[31m-        <entry file="file://$PROJECT_DIR$/application/controllers/doctor_controller.php">[m
+[32m+[m[32m      <file leaf-file-name="footer.php" pinned="false" current-in-tab="true">[m
+[32m+[m[32m        <entry file="file://$PROJECT_DIR$/application/views/theme/greenlife/footer.php">[m
+           <provider selected="true" editor-type-id="text-editor">[m
+[31m-            <state relative-caret-position="1853">[m
+[31m-              <caret line="109" column="50" selection-start-line="109" selection-start-column="50" selection-end-line="109" selection-end-column="54" />[m
+[31m-              <folding />[m
+[32m+[m[32m            <state relative-caret-position="204">[m
+[32m+[m[32m              <caret line="111" column="5" selection-start-line="111" selection-start-column="5" selection-end-line="111" selection-end-column="5" />[m
+[32m+[m[32m              <folding>[m
+[32m+[m[32m                <element signature="e#294#2594#0#HTML" expanded="false" />[m
+[32m+[m[32m              </folding>[m
+             </state>[m
+           </provider>[m
+         </entry>[m
+       </file>[m
+[31m-      <file leaf-file-name="left-menu.php" pinned="false" current-in-tab="true">[m
+[31m-        <entry file="file://$PROJECT_DIR$/application/views/theme/greenlife/left-menu.php">[m
+[32m+[m[32m      <file leaf-file-name="doctor.php" pinned="false" current-in-tab="false">[m
+[32m+[m[32m        <entry file="file://$PROJECT_DIR$/application/controllers/doctor.php">[m
+           <provider selected="true" editor-type-id="text-editor">[m
+[31m-            <state relative-caret-position="17">[m
+[31m-              <caret line="25" column="53" selection-start-line="25" selection-start-column="53" selection-end-line="25" selection-end-column="53" />[m
+[32m+[m[32m            <state relative-caret-position="0">[m
+[32m+[m[32m              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />[m
+               <folding />[m
+             </state>[m
+           </provider>[m
+         </entry>[m
+       </file>[m
+[31m-      <file leaf-file-name="doctor-details.php" pinned="false" current-in-tab="false">[m
+[31m-        <entry file="file://$PROJECT_DIR$/application/views/theme/greenlife/doctor/doctor-details.php">[m
+[32m+[m[32m      <file leaf-file-name="jquery.validate.min.js" pinned="false" current-in-tab="false">[m
+[32m+[m[32m        <entry file="file://$PROJECT_DIR$/application/views/theme/greenlife/scrpits/jquery.validate.min.js">[m
+           <provider selected="true" editor-type-id="text-editor">[m
+[31m-            <state relative-caret-position="3740">[m
+[31m-              <caret line="220" column="0" selection-start-line="220" selection-start-column="0" selection-end-line="220" selection-end-column="0" />[m
+[31m-              <folding />[m
+[32m+[m[32m            <state relative-caret-position="51">[m
+[32m+[m[32m              <caret line="3" column="984" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="22550" />[m
+[32m+[m[32m              <folding>[m
+[32m+[m[32m                <element signature="n#!!doc" expanded="true" />[m
+[32m+[m[32m              </folding>[m
+             </state>[m
+           </provider>[m
+         </entry>[m
+       </file>[m
+[31m-      <file leaf-file-name="patient-details.php" pinned="false" current-in-tab="false">[m
+[31m-        <entry file="file://$PROJECT_DIR$/application/views/theme/greenlife/patient/patient-details.php">[m
+[32m+[m[32m      <file leaf-file-name="validation.js" pinned="false" current-in-tab="false">[m
+[32m+[m[32m        <entry file="file://$PROJECT_DIR$/application/views/theme/greenlife/scrpits/validation.js">[m
+           <provider selected="true" editor-type-id="text-editor">[m
+[31m-            <state relative-caret-position="3026">[m
+[31m-              <caret line="178" column="0" selection-start-line="178" selection-start-column="0" selection-end-line="178" selection-end-column="0" />[m
+[31m-              <folding />[m
+[32m+[m[32m            <state relative-caret-position="0">[m
+[32m+[m[32m              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="99" selection-end-column="3" />[m
+[32m+[m[32m              <folding>[m
+[32m+[m[32m                <element signature="e#29#2787#0" expanded="false" />[m
+[32m+[m[32m              </folding>[m
+             </state>[m
+           </provider>[m
+         </entry>[m
+[36m@@ -82,41 +97,48 @@[m
+       <file leaf-file-name="doctor-list.php" pinned="false" current-in-tab="false">[m
+         <entry file="file://$PROJECT_DIR$/application/views/theme/greenlife/doctor/doctor-list.php">[m
+           <provider selected="true" editor-type-id="text-editor">[m
+[31m-            <state relative-caret-position="221">[m
+[31m-              <caret line="13" column="16" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="34" />[m
+[32m+[m[32m            <state relative-caret-position="-63">[m
+[32m+[m[32m              <caret line="49" column="63" selection-start-line="49" selection-start-column="63" selection-end-line="49" selection-end-column="63" />[m
+               <folding />[m
+             </state>[m
+           </provider>[m
+         </entry>[m
+       </file>[m
+[31m-      <file leaf-file-name="doctor-add.php" pinned="false" current-in-tab="false">[m
+[31m-        <entry file="file://$PROJECT_DIR$/application/views/theme/greenlife/doctor/doctor-add.php">[m
+[32m+[m[32m      <file leaf-file-name="validation.js" pinned="false" current-in-tab="false">[m
+[32m+[m[32m        <entry file="file://$PROJECT_DIR$/application/views/theme/greenlife/validation.js">[m
+           <provider selected="true" editor-type-id="text-editor">[m
+[31m-            <state relative-caret-position="1377">[m
+[31m-              <caret line="81" column="45" selection-start-line="81" selection-start-column="33" selection-end-line="81" selection-end-column="45" />[m
+[32m+[m[32m            <state relative-caret-position="0">[m
+[32m+[m[32m              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />[m
+               <folding />[m
+             </state>[m
+           </provider>[m
+         </entry>[m
+       </file>[m
+[31m-      <file leaf-file-name="Doctor_model.php" pinned="false" current-in-tab="false">[m
+[31m-        <entry file="file://$PROJECT_DIR$/application/models/Doctor_model.php">[m
+[32m+[m[32m      <file leaf-file-name="header.php" pinned="false" current-in-tab="false">[m
+[32m+[m[32m        <entry file="file://$PROJECT_DIR$/application/views/theme/greenlife/header.php">[m
+           <provider selected="true" editor-type-id="text-editor">[m
+[31m-            <state relative-caret-position="1428">[m
+[31m-              <caret line="104" column="35" selection-start-line="104" selection-start-column="20" selection-end-line="104" selection-end-column="35" />[m
+[31m-              <folding>[m
+[31m-                <element signature="n#add_doctor_meta#0;n#Doctor_model#0;n#!!top" expanded="false" />[m
+[31m-                <element signature="n#get_doctor_meta#0;n#Doctor_model#0;n#!!top" expanded="false" />[m
+[31m-              </folding>[m
+[32m+[m[32m            <state relative-caret-position="141">[m
+[32m+[m[32m              <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />[m
+[32m+[m[32m              <folding />[m
+[32m+[m[32m            </state>[m
+[32m+[m[32m          </provider>[m
+[32m+[m[32m        </entry>[m
+[32m+[m[32m      </file>[m
+[32m+[m[32m      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">[m
+[32m+[m[32m        <entry file="file://$PROJECT_DIR$/application/views/theme/greenlife/index.html">[m
+[32m+[m[32m          <provider selected="true" editor-type-id="text-editor">[m
+[32m+[m[32m            <state relative-caret-position="0">[m
+[32m+[m[32m              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />[m
+[32m+[m[32m              <folding />[m
+             </state>[m
+           </provider>[m
+         </entry>[m
+       </file>[m
+[31m-      <file leaf-file-name="doctor-update.php" pinned="false" current-in-tab="false">[m
+[31m-        <entry file="file://$PROJECT_DIR$/application/views/theme/greenlife/doctor/doctor-update.php">[m
+[32m+[m[32m      <file leaf-file-name="patient-add.php" pinned="false" current-in-tab="false">[m
+[32m+[m[32m        <entry file="file://$PROJECT_DIR$/application/views/theme/greenlife/patient/patient-add.php">[m
+           <provider selected="true" editor-type-id="text-editor">[m
+[31m-            <state relative-caret-position="1428">[m
+[31m-              <caret line="84" column="30" selection-start-line="84" selection-start-column="30" selection-end-line="84" selection-end-column="30" />[m
+[32m+[m[32m            <state relative-caret-position="149">[m
+[32m+[m[32m              <caret line="163" column="62" selection-start-line="163" selection-start-column="47" selection-end-line="163" selection-end-column="62" />[m
+               <folding />[m
+             </state>[m
+           </provider>[m
+[36m@@ -124,13 +146,22 @@[m
+       </file>[m
+     </leaf>[m
+   </component>[m
+[32m+[m[32m  <component name="FileTemplateManagerImpl">[m
+[32m+[m[32m    <option name="RECENT_TEMPLATES">[m
+[32m+[m[32m      <list>[m
+[32m+[m[32m        <option value="JavaScript File" />[m
+[32m+[m[32m      </list>[m
+[32m+[m[32m    </option>[m
+[32m+[m[32m  </component>[m
+[32m+[m[32m  <component name="Git.Settings">[m
+[32m+[m[32m    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />[m
+[32m+[m[32m  </component>[m
+   <component name="IdeDocumentHistory">[m
+     <option name="CHANGED_PATHS">[m
+       <list>[m
+         <option value="$PROJECT_DIR$/application/controllers/dashboard.php" />[m
+         <option value="$PROJECT_DIR$/application/views/theme/greenlife/patient/patient-list.php" />[m
+         <option value="$PROJECT_DIR$/application/views/theme/greenlife/patient/patient-edit.php" />[m
+[31m-        <option value="$PROJECT_DIR$/application/views/theme/greenlife/patient/patient-add.php" />[m
+         <option value="$PROJECT_DIR$/application/views/theme/greenlife/patient/patient-details.php" />[m
+         <option value="$PROJECT_DIR$/application/classes/doctor_meta.php" />[m
+         <option value="$PROJECT_DIR$/application/classes/Doctor.php" />[m
+[36m@@ -143,8 +174,15 @@[m
+         <option value="$PROJECT_DIR$/application/controllers/doctor_controller.php" />[m
+         <option value="$PROJECT_DIR$/application/views/theme/greenlife/doctor/doctor-update.php" />[m
+         <option value="$PROJECT_DIR$/application/views/theme/greenlife/doctor/doctor-details.php" />[m
+[31m-        <option value="$PROJECT_DIR$/application/views/theme/greenlife/doctor/doctor-list.php" />[m
+         <option value="$PROJECT_DIR$/application/views/theme/greenlife/left-menu.php" />[m
+[32m+[m[32m        <option value="$PROJECT_DIR$/application/views/theme/greenlife/scripts/validation" />[m
+[32m+[m[32m        <option value="$PROJECT_DIR$/application/views/theme/greenlife/patient/scrpits/validation.js" />[m
+[32m+[m[32m        <option value="$PROJECT_DIR$/application/views/theme/greenlife/patient/validation.js" />[m
+[32m+[m[32m        <option value="$PROJECT_DIR$/application/views/theme/greenlife/doctor/doctor-list.php" />[m
+[32m+[m[32m        <option value="$PROJECT_DIR$/application/views/theme/greenlife/header.php" />[m
+[32m+[m[32m        <option value="$PROJECT_DIR$/application/views/theme/greenlife/patient/patient-add.php" />[m
+[32m+[m[32m        <option value="$PROJECT_DIR$/application/views/theme/greenlife/scrpits/validation.js" />[m
+[32m+[m[32m        <option value="$PROJECT_DIR$/application/views/theme/greenlife/footer.php" />[m
+       </list>[m
+     </option>[m
+   </component>[m
+[36m@@ -157,7 +195,8 @@[m
+   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" interpreter_name="PHP" />[m
+   <component name="ProjectFrameBounds">[m
+     <option name="x" value="-8" />[m
+[31m-    <option name="width" value="1370" />[m
+[32m+[m[32m    <option name="y" value="-8" />[m
+[32m+[m[32m    <option name="width" value="1382" />[m
+     <option name="height" value="744" />[m
+   </component>[m
+   <component name="ProjectLevelVcsManager" settingsEditedManually="false">[m
+[36m@@ -167,7 +206,7 @@[m
+     <OptionsSetting value="true" id="Update" />[m
+     <OptionsSetting value="true" id="Status" />[m
+     <OptionsSetting value="true" id="Edit" />[m
+[31m-    <ConfirmationsSetting value="0" id="Add" />[m
+[32m+[m[32m    <ConfirmationsSetting value="2" id="Add" />[m
+     <ConfirmationsSetting value="0" id="Remove" />[m
+   </component>[m
+   <component name="ProjectView">[m
+[36m@@ -185,8 +224,6 @@[m
+       <foldersAlwaysOnTop value="true" />[m
+     </navigator>[m
+     <panes>[m
+[31m-      <pane id="Scope" />[m
+[31m-      <pane id="Scratches" />[m
+       <pane id="ProjectPane">[m
+         <subPane>[m
+           <PATH>[m
+[36m@@ -289,7 +326,7 @@[m
+               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />[m
+             </PATH_ELEMENT>[m
+             <PATH_ELEMENT>[m
+[31m-              <option name="myItemId" value="patient" />[m
+[32m+[m[32m              <option name="myItemId" value="scrpits" />[m
+               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />[m
+             </PATH_ELEMENT>[m
+           </PATH>[m
+[36m@@ -307,29 +344,34 @@[m
+               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />[m
+             </PATH_ELEMENT>[m
+             <PATH_ELEMENT>[m
+[31m-              <option name="myItemId" value="views" />[m
+[31m-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />[m
+[31m-            </PATH_ELEMENT>[m
+[31m-            <PATH_ELEMENT>[m
+[31m-              <option name="myItemId" value="theme" />[m
+[31m-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />[m
+[31m-            </PATH_ELEMENT>[m
+[31m-            <PATH_ELEMENT>[m
+[31m-              <option name="myItemId" value="greenlife" />[m
+[31m-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />[m
+[31m-            </PATH_ELEMENT>[m
+[31m-            <PATH_ELEMENT>[m
+[31m-              <option name="myItemId" value="doctor" />[m
+[32m+[m[32m              <option name="myItemId" value="controllers" />[m
+               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />[m
+             </PATH_ELEMENT>[m
+           </PATH>[m
+         </subPane>[m
+       </pane>[m
+[32m+[m[32m      <pane id="Scope" />[m
+[32m+[m[32m      <pane id="Scratches" />[m
+     </panes>[m
+   </component>[m
+   <component name="PropertiesComponent">[m
+[31m-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />[m
+[32m+[m[32m    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../bin/php/php5.5.12/php.exe" />[m
+     <property name="WebServerToolWindowFactoryState" value="false" />[m
+[32m+[m[32m    <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />[m
+[32m+[m[32m    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />[m
+[32m+[m[32m    <property name="settings.editor.splitter.proportion" value="0.2" />[m
+[32m+[m[32m    <property name="SearchEverywhereHistoryKey" value="sett&#9;ACTION&#9;Database.Settings" />[m
+[32m+[m[32m  </component>[m
+[32m+[m[32m  <component name="RecentsManager">[m
+[32m+[m[32m    <key name="MoveFile.RECENT_KEYS">[m
+[32m+[m[32m      <recent name="C:\wamp\www\greenlife\application\views\theme\greenlife" />[m
+[32m+[m[32m      <recent name="C:\wamp\www\greenlife\application\views\theme\greenlife\scrpits" />[m
+[32m+[m[32m      <recent name="C:\wamp\www\greenlife\application\views\theme\greenlife\" />[m
+[32m+[m[32m    </key>[m
+[32m+[m[32m    <key name="CopyFile.RECENT_KEYS">[m
+[32m+[m[32m      <recent name="C:\wamp\www\greenlife\application\views" />[m
+[32m+[m[32m      <recent name="C:\wamp\www\greenlife\application\views\theme\greenlife\patient\" />[m
+[32m+[m[32m    </key>[m
+   </component>[m
+   <component name="RunManager" selected="JavaScript Debug.patient.php">[m
+     <configuration default="false" name="patient.php" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/greenlife/application/controllers/patient.php">[m
+[36m@@ -408,34 +450,35 @@[m
+       <workItem from="1479527388510" duration="21781000" />[m
+       <workItem from="1479609777187" duration="22871000" />[m
+       <workItem from="1479703170513" duration="37000" />[m
+[32m+[m[32m      <workItem from="1479703738049" duration="10093000" />[m
+     </task>[m
+     <servers />[m
+   </component>[m
+   <component name="TimeTrackingManager">[m
+[31m-    <option name="totallyTimeSpent" value="54568000" />[m
+[32m+[m[32m    <option name="totallyTimeSpent" value="64661000" />[m
+   </component>[m
+   <component name="ToolWindowManager">[m
+[31m-    <frame x="-8" y="0" width="1370" height="744" extended-state="1" />[m
+[31m-    <editor active="false" />[m
+[32m+[m[32m    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />[m
+[32m+[m[32m    <editor active="true" />[m
+     <layout>[m
+[31m-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18980798" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />[m
+[32m+[m[32m      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18814056" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />[m
+       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />[m
+[32m+[m[32m      <window_info id="PHP-CGI Server" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />[m
+       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />[m
+[31m-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.0022156574" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />[m
+[32m+[m[32m      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.0021961932" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />[m
+[32m+[m[32m      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.0" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />[m
+       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />[m
+[32m+[m[32m      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />[m
+       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />[m
+       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />[m
+       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />[m
+[32m+[m[32m      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32854864" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />[m
+       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />[m
+       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />[m
+[31m-      <window_info id="PHP-CGI Server" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />[m
+       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />[m
+       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />[m
+[31m-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />[m
+       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />[m
+[31m-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />[m
+       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />[m
+[31m-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.0" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />[m
+     </layout>[m
+   </component>[m
+   <component name="Vcs.Log.UiProperties">[m
+[36m@@ -456,81 +499,6 @@[m
+     <watches-manager />[m
+   </component>[m
+   <component name="editorHistoryManager">[m
+[31m-    <entry file="file://$PROJECT_DIR$/application/controllers/patient.php">[m
+[31m-      <provider selected="true" editor-type-id="text-editor">[m
+[31m-        <state relative-caret-position="2703">[m
+[31m-          <caret line="159" column="0" selection-start-line="159" selection-start-column="0" selection-end-line="159" selection-end-column="0" />[m
+[31m-          <folding />[m
+[31m-        </state>[m
+[31m-      </provider>[m
+[31m-    </entry>[m
+[31m-    <entry file="file://$PROJECT_DIR$/application/controllers/doctor_controller.php">[m
+[31m-      <provider selected="true" editor-type-id="text-editor">[m
+[31m-        <state relative-caret-position="1853">[m
+[31m-          <caret line="109" column="50" selection-start-line="109" selection-start-column="50" selection-end-line="109" selection-end-column="54" />[m
+[31m-          <folding />[m
+[31m-        </state>[m
+[31m-      </provider>[m
+[31m-    </entry>[m
+[31m-    <entry file="file://$PROJECT_DIR$/application/views/theme/greenlife/left-menu.php">[m
+[31m-      <provider selected="true" editor-type-id="text-editor">[m
+[31m-        <state relative-caret-position="0">[m
+[31m-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />[m
+[31m-          <folding />[m
+[31m-        </state>[m
+[31m-      </provider>[m
+[31m-    </entry>[m
+[31m-    <entry file="file://$PROJECT_DIR$/application/views/theme/greenlife/doctor/doctor-details.php">[m
+[31m-      <provider selected="true" editor-type-id="text-editor">[m
+[31m-        <state relative-caret-position="3740">[m
+[31m-          <caret line="220" column="0" selection-start-line="220" selection-start-column="0" selection-end-line="220" selection-end-column="0" />[m
+[31m-          <folding />[m
+[31m-        </state>[m
+[31m-      </provider>[m
+[31m-    </entry>[m
+[31m-    <entry file="file://$PROJECT_DIR$/application/views/theme/greenlife/patient/patient-details.php">[m
+[31m-      <provider selected="true" editor-type-id="text-editor">[m
+[31m-        <state relative-caret-position="3026">[m
+[31m-          <caret line="178" column="0" selection-start-line="178" selection-start-column="0" selection-end-line="178" selection-end-column="0" />[m
+[31m-          <folding />[m
+[31m-        </state>[m
+[31m-      </provider>[m
+[31m-    </entry>[m
+[31m-    <entry file="file://$PROJECT_DIR$/application/views/theme/greenlife/doctor/doctor-list.php">[m
+[31m-      <provider selected="true" editor-type-id="text-editor">[m
+[31m-        <state relative-caret-position="221">[m
+[31m-          <caret line="13" column="16" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="34" />[m
+[31m-          <folding />[m
+[31m-        </state>[m
+[31m-      </provider>[m
+[31m-    </entry>[m
+[31m-    <entry file="file://$PROJECT_DIR$/application/views/theme/greenlife/doctor/doctor-add.php">[m
+[31m-      <provider selected="true" editor-type-id="text-editor">[m
+[31m-        <state relative-caret-position="1377">[m
+[31m-          <caret line="81" column="45" selection-start-line="81" selection-start-column="33" selection-end-line="81" selection-end-column="45" />[m
+[31m-          <folding />[m
+[31m-        </state>[m
+[31m-      </provider>[m
+[31m-    </entry>[m
+[31m-    <entry file="file://$PROJECT_DIR$/application/models/Doctor_model.php">[m
+[31m-      <provider selected="true" editor-type-id="text-editor">[m
+[31m-        <state relative-caret-position="1428">[m
+[31m-          <caret line="104" column="35" selection-start-line="104" selection-start-column="20" selection-end-line="104" selection-end-column="35" />[m
+[31m-          <folding>[m
+[31m-            <element signature="n#add_doctor_meta#0;n#Doctor_model#0;n#!!top" expanded="false" />[m
+[31m-            <element signature="n#get_doctor_meta#0;n#Doctor_model#0;n#!!top" expanded="false" />[m
+[31m-          </folding>[m
+[31m-        </state>[m
+[31m-      </provider>[m
+[31m-    </entry>[m
+[31m-    <entry file="file://$PROJECT_DIR$/application/views/theme/greenlife/doctor/doctor-update.php">[m
+[31m-      <provider selected="true" editor-type-id="text-editor">[m
+[31m-        <state relative-caret-position="1428">[m
+[31m-          <caret line="84" column="30" selection-start-line="84" selection-start-column="30" selection-end-line="84" selection-end-column="30" />[m
+[31m-          <folding />[m
+[31m-        </state>[m
+[31m-      </provider>[m
+[31m-    </entry>[m
+     <entry file="file://$PROJECT_DIR$/application/controllers/doctor_controller.php">[m
+       <provider selected="true" editor-type-id="text-editor">[m
+         <state relative-caret-position="1122">[m
+[36m@@ -702,14 +670,6 @@[m
+         </state>[m
+       </provider>[m
+     </entry>[m
+[31m-    <entry file="file://$PROJECT_DIR$/application/views/theme/greenlife/patient/patient-add.php">[m
+[31m-      <provider selected="true" editor-type-id="text-editor">[m
+[31m-        <state relative-caret-position="221">[m
+[31m-          <caret line="34" column="15" selection-start-line="34" selection-start-column="15" selection-end-line="34" selection-end-column="15" />[m
+[31m-          <folding />[m
+[31m-        </state>[m
+[31m-      </provider>[m
+[31m-    </entry>[m
+     <entry file="file://$PROJECT_DIR$/application/classes/Patient.php">[m
+       <provider selected="true" editor-type-id="text-editor">[m
+         <state relative-caret-position="34">[m
+[36m@@ -801,14 +761,6 @@[m
+         </state>[m
+       </provider>[m
+     </entry>[m
+[31m-    <entry file="file://$PROJECT_DIR$/application/controllers/doctor_controller.php">[m
+[31m-      <provider selected="true" editor-type-id="text-editor">[m
+[31m-        <state relative-caret-position="1853">[m
+[31m-          <caret line="109" column="50" selection-start-line="109" selection-start-column="50" selection-end-line="109" selection-end-column="54" />[m
+[31m-          <folding />[m
+[31m-        </state>[m
+[31m-      </provider>[m
+[31m-    </entry>[m
+     <entry file="file://$PROJECT_DIR$/application/views/theme/greenlife/doctor/doctor-update.php">[m
+       <provider selected="true" editor-type-id="text-editor">[m
+         <state relative-caret-position="1428">[m
+[36m@@ -825,21 +777,123 @@[m
+         </state>[m
+       </provider>[m
+     </entry>[m
+[32m+[m[32m    <entry file="file://$PROJECT_DIR$/application/views/theme/greenlife/left-menu.php">[m
+[32m+[m[32m      <provider selected="true" editor-type-id="text-editor">[m
+[32m+[m[32m        <state relative-caret-position="374">[m
+[32m+[m[32m          <caret line="25" column="53" selection-start-line="25" selection-start-column="53" selection-end-line="25" selection-end-column="53" />[m
+[32m+[m[32m          <folding />[m
+[32m+[m[32m        </state>[m
+[32m+[m[32m      </provider>[m
+[32m+[m[32m    </entry>[m
+[32m+[m[32m    <entry file="file://$PROJECT_DIR$/application/views/theme/greenlife/scripts/validation">[m
+[32m+[m[32m      <provider selected="true" editor-type-id="text-editor">[m
+[32m+[m[32m        <state relative-caret-position="0">[m
+[32m+[m[32m          <caret line="0" column="15" selection-start-line="0" selection-start-column="15" selection-end-line="0" selection-end-column="15" />[m
+[32m+[m[32m          <folding />[m
+[32m+[m[32m        </state>[m
+[32m+[m[32m      </provider>[m
+[32m+[m[32m    </entry>[m
+[32m+[m[32m    <entry file="file://$PROJECT_DIR$/application/views/theme/greenlife/patient/validation.js">[m
+[32m+[m[32m      <provider selected="true" editor-type-id="text-editor">[m
+[32m+[m[32m        <state relative-caret-position="0">[m
+[32m+[m[32m          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />[m
+[32m+[m[32m          <folding />[m
+[32m+[m[32m        </state>[m
+[32m+[m[32m      </provider>[m
+[32m+[m[32m    </entry>[m
+[32m+[m[32m    <entry file="file://$PROJECT_DIR$/application/views/theme/greenlife/patient/patient-register.php">[m
+[32m+[m[32m      <provider selected="true" editor-type-id="text-editor">[m
+[32m+[m[32m        <state relative-caret-position="250">[m
+[32m+[m[32m          <caret line="25" column="12" selection-start-line="25" selection-start-column="12" selection-end-line="25" selection-end-column="12" />[m
+[32m+[m[32m          <folding />[m
+[32m+[m[32m        </state>[m
+[32m+[m[32m      </provider>[m
+[32m+[m[32m    </entry>[m
+[32m+[m[32m    <entry file="file://$PROJECT_DIR$/application/views/theme/greenlife/index.html">[m
+[32m+[m[32m      <provider selected="true" editor-type-id="text-editor">[m
+[32m+[m[32m        <state relative-caret-position="0">[m
+[32m+[m[32m          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />[m
+[32m+[m[32m          <folding />[m
+[32m+[m[32m        </state>[m
+[32m+[m[32m      </provider>[m
+[32m+[m[32m    </entry>[m
+[32m+[m[32m    <entry file="file://$PROJECT_DIR$/application/views/theme/greenlife/scrpits/jquery.validate.min.js">[m
+[32m+[m[32m      <provider selected="true" editor-type-id="text-editor">[m
+[32m+[m[32m        <state relative-caret-position="51">[m
+[32m+[m[32m          <caret line="3" column="984" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="22550" />[m
+[32m+[m[32m          <folding>[m
+[32m+[m[32m            <element signature="n#!!doc" expanded="true" />[m
+[32m+[m[32m          </folding>[m
+[32m+[m[32m        </state>[m
+[32m+[m[32m      </provider>[m
+[32m+[m[32m    </entry>[m
+[32m+[m[32m    <entry file="file://$PROJECT_DIR$/application/controllers/doctor.php">[m
+[32m+[m[32m      <provider selected="true" editor-type-id="text-editor">[m
+[32m+[m[32m        <state relative-caret-position="0">[m
+[32m+[m[32m          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />[m
+[32m+[m[32m          <folding />[m
+[32m+[m[32m        </state>[m
+[32m+[m[32m      </provider>[m
+[32m+[m[32m    </entry>[m
+[32m+[m[32m    <entry file="file://$PROJECT_DIR$/application/controllers/doctor_controller.php">[m
+[32m+[m[32m      <provider selected="true" editor-type-id="text-editor">[m
+[32m+[m[32m        <state relative-caret-position="-242">[m
+[32m+[m[32m          <caret line="50" column="21" selection-start-line="50" selection-start-column="15" selection-end-line="50" selection-end-column="21" />[m
+[32m+[m[32m          <folding />[m
+[32m+[m[32m        </state>[m
+[32m+[m[32m      </provider>[m
+[32m+[m[32m    </entry>[m
+     <entry file="file://$PROJECT_DIR$/application/views/theme/greenlife/doctor/doctor-list.php">[m
+       <provider selected="true" editor-type-id="text-editor">[m
+[31m-        <state relative-caret-position="221">[m
+[31m-          <caret line="13" column="16" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="34" />[m
+[32m+[m[32m        <state relative-caret-position="-63">[m
+[32m+[m[32m          <caret line="49" column="63" selection-start-line="49" selection-start-column="63" selection-end-line="49" selection-end-column="63" />[m
+           <folding />[m
+         </state>[m
+       </provider>[m
+     </entry>[m
+[31m-    <entry file="file://$PROJECT_DIR$/application/views/theme/greenlife/left-menu.php">[m
+[32m+[m[32m    <entry file="file://$PROJECT_DIR$/application/views/theme/greenlife/header.php">[m
+       <provider selected="true" editor-type-id="text-editor">[m
+[31m-        <state relative-caret-position="17">[m
+[31m-          <caret line="25" column="53" selection-start-line="25" selection-start-column="53" selection-end-line="25" selection-end-column="53" />[m
+[32m+[m[32m        <state relative-caret-position="141">[m
+[32m+[m[32m          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />[m
+[32m+[m[32m          <folding />[m
+[32m+[m[32m        </state>[m
+[32m+[m[32m      </provider>[m
+[32m+[m[32m    </entry>[m
+[32m+[m[32m    <entry file="file://$PROJECT_DIR$/application/views/theme/greenlife/patient/patient-add.php">[m
+[32m+[m[32m      <provider selected="true" editor-type-id="text-editor">[m
+[32m+[m[32m        <state relative-caret-position="149">[m
+[32m+[m[32m          <caret line="163" column="62" selection-start-line="163" selection-start-column="47" selection-end-line="163" selection-end-column="62" />[m
+[32m+[m[32m          <folding />[m
+[32m+[m[32m        </state>[m
+[32m+[m[32m      </provider>[m
+[32m+[m[32m    </entry>[m
+[32m+[m[32m    <entry file="file://$PROJECT_DIR$/application/views/theme/greenlife/validation.js">[m
+[32m+[m[32m      <provider selected="true" editor-type-id="text-editor">[m
+[32m+[m[32m        <state relative-caret-position="0">[m
+[32m+[m[32m          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />[m
+           <folding />[m
+         </state>[m
+       </provider>[m
+     </entry>[m
+[32m+[m[32m    <entry file="file://$PROJECT_DIR$/application/views/theme/greenlife/scrpits/validation.js">[m
+[32m+[m[32m      <provider selected="true" editor-type-id="text-editor">[m
+[32m+[m[32m        <state relative-caret-position="0">[m
+[32m+[m[32m          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="99" selection-end-column="3" />[m
+[32m+[m[32m          <folding>[m
+[32m+[m[32m            <element signature="e#29#2787#0" expanded="false" />[m
+[32m+[m[32m          </folding>[m
+[32m+[m[32m        </state>[m
+[32m+[m[32m      </provider>[m
+[32m+[m[32m    </entry>[m
+[32m+[m[32m    <entry file="file://$PROJECT_DIR$/application/views/theme/greenlife/footer.php">[m
+[32m+[m[32m      <provider selected="true" editor-type-id="text-editor">[m
+[32m+[m[32m        <state relative-caret-position="204">[m
+[32m+[m[32m          <caret line="111" column="5" selection-start-line="111" selection-start-column="5" selection-end-line="111" selection-end-column="5" />[m
+[32m+[m[32m          <folding>[m
+[32m+[m[32m            <element signature="e#294#2594#0#HTML" expanded="false" />[m
+[32m+[m[32m          </folding>[m
+[32m+[m[32m        </state>[m
+[32m+[m[32m      </provider>[m
+[32m+[m[32m    </entry>[m
+   </component>[m
+ </project>[m
+\ No newline at end of file[m
+[1mdiff --git a/application/views/theme/greenlife/doctor/doctor-list.php b/application/views/theme/greenlife/doctor/doctor-list.php[m
+[1mindex 618b104..b427bf0 100644[m
+[1m--- a/application/views/theme/greenlife/doctor/doctor-list.php[m
+[1m+++ b/application/views/theme/greenlife/doctor/doctor-list.php[m
+[36m@@ -43,14 +43,14 @@[m
+ [m
+                         $json= json_decode( $doc->specialization);[m
+                         $str2='';[m
+[31m-                        foreach ($config as $config)[m
+[32m+[m[32m                        foreach ($config as $con)[m
+                         {[m
+ [m
+ [m
+                             foreach ($json as $key => $value) {[m
+ [m
+[31m-                                if ($value == $config->id) {[m
+[31m-                                    $str2 = $str2 . $config->specialization.',';[m
+[32m+[m[32m                                if ($value == $con->id) {[m
+[32m+[m[32m                                    $str2 = $str2 . $con->specialization.',';[m
+                                 }[m
+                             }[m
+                         }[m
+[1mdiff --git a/application/views/theme/greenlife/footer.php b/application/views/theme/greenlife/footer.php[m
+[1mindex de3bce4..de447d5 100644[m
+[1m--- a/application/views/theme/greenlife/footer.php[m
+[1m+++ b/application/views/theme/greenlife/footer.php[m
+[36m@@ -1,17 +1,116 @@[m
+ [m
+[31m-  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>[m
+   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>[m
+[31m-    <script>[m
+[32m+[m
+[32m+[m[32m  <script>[m
+   $( function() {[m
+   	var datepicker = $( "#datepicker" );[m
+     datepicker.datepicker();[m
+     datepicker.datepicker({ dateFormat: "yy-mm-dd" }).val();[m
+[31m-    [m
+[31m-[m
+   } );[m
+   </script>[m
+ [m
+[32m+[m[32m<script>[m
+[32m+[m[32m  $(document).ready(function() {[m
+[32m+[m[32m    $('#contact_form').bootstrapValidator({[m
+[32m+[m[32m      // To use feedback icons, ensure that you use Bootstrap v3.1.0 or later[m
+[32m+[m[32m      feedbackIcons: {[m
+[32m+[m[32m        valid: 'glyphicon glyphicon-ok',[m
+[32m+[m[32m        invalid: 'glyphicon glyphicon-remove',[m
+[32m+[m[32m        validating: 'glyphicon glyphicon-refresh'[m
+[32m+[m[32m      },[m
+[32m+[m[32m      fields: {[m
+[32m+[m[32m        name: {[m
+[32m+[m[32m          validators: {[m
+[32m+[m[32m            stringLength: {[m
+[32m+[m[32m              min: 2,[m
+[32m+[m[32m            },[m
+[32m+[m[32m            notEmpty: {[m
+[32m+[m[32m              message: 'Please supply your first name'[m
+[32m+[m[32m            }[m
+[32m+[m[32m          }[m
+[32m+[m[32m        },[m
+[32m+[m[32m        person_email: {[m
+[32m+[m[32m          validators: {[m
+[32m+[m[32m            stringLength: {[m
+[32m+[m[32m              min: 2,[m
+[32m+[m[32m            },[m
+[32m+[m[32m            emailAddress: {[m
+[32m+[m[32m              message: 'The value is not a valid email address'[m
+[32m+[m[32m            }[m
+[32m+[m[32m          }[m
+[32m+[m[32m        },[m
+[32m+[m
+[32m+[m[32m        person_phone: {[m
+[32m+[m[32m          validators: {[m
+[32m+[m[32m            stringLength: {[m
+[32m+[m[32m              min: 11,[m
+[32m+[m
+[32m+[m[32m            },[m
+[32m+[m[32m            notEmpty: {[m
+[32m+[m[32m              message: 'The mobile phone number is not valid'[m
+[32m+[m[32m            }[m
+[32m+[m[32m          }[m
+[32m+[m[32m        },[m
+[32m+[m[32m        area: {[m
+[32m+[m[32m          validators: {[m
+[32m+[m[32m            stringLength: {[m
+[32m+[m[32m              min: 4,[m
+[32m+[m
+[32m+[m[32m            },[m
+[32m+[m[32m            notEmpty: {[m
+[32m+[m[32m              message: 'address is not valid'[m
+[32m+[m[32m            }[m
+[32m+[m[32m          }[m
+[32m+[m[32m        },[m
+[32m+[m[32m        person_gender: {[m
+[32m+[m[32m          validators: {[m
+[32m+[m[32m            stringLength: {[m
+[32m+[m
+[32m+[m[32m            },[m
+[32m+[m[32m            notEmpty: {[m
+[32m+[m[32m              message: 'gender is required'[m
+[32m+[m[32m            }[m
+[32m+[m[32m          }[m
+[32m+[m[32m        },[m
+[32m+[m
+[32m+[m[32m        person_problems: {[m
+[32m+[m[32m          validators: {[m
+[32m+[m[32m            stringLength: {[m
+[32m+[m
+[32m+[m[32m            },[m
+[32m+[m[32m            notEmpty: {[m
+[32m+[m[32m              message: 'please enter some problem of patient'[m
+[32m+[m[32m            }[m
+[32m+[m[32m          }[m
+[32m+[m[32m        },[m
+[32m+[m
+[32m+[m
+[32m+[m
+[32m+[m
+[32m+[m
+[32m+[m
+[32m+[m[32m      }[m
+[32m+[m[32m    })[m
+[32m+[m[32m        .on('success.form.bv', function(e) {[m
+[32m+[m[32m          $('#success_message').slideDown({ opacity: "show" }, "slow") // Do something ...[m
+[32m+[m[32m          $('#contact_form').data('bootstrapValidator').resetForm();[m
+[32m+[m
+[32m+[m[32m          // Prevent form submission[m
+[32m+[m[32m          e.preventDefault();[m
+[32m+[m
+[32m+[m[32m          // Get the form instance[m
+[32m+[m[32m          var $form = $(e.target);[m
+[32m+[m
+[32m+[m[32m          // Get the BootstrapValidator instance[m
+[32m+[m[32m          var bv = $form.data('bootstrapValidator');[m
+ [m
+[32m+[m[32m          // Use Ajax to submit form data[m
+[32m+[m[32m          $.post($form.attr('action'), $form.serialize(), function(result) {[m
+[32m+[m[32m            console.log(result);[m
+[32m+[m[32m          }, 'json');[m
+[32m+[m[32m        });[m
+[32m+[m[32m  });[m
+[32m+[m[32m</script>[m
+  [m
+ [m
+ [m
+[1mdiff --git a/application/views/theme/greenlife/header.php b/application/views/theme/greenlife/header.php[m
+[1mindex 8263331..c19fa71 100644[m
+[1m--- a/application/views/theme/greenlife/header.php[m
+[1m+++ b/application/views/theme/greenlife/header.php[m
+[36m@@ -10,6 +10,14 @@[m
+ <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">[m
+ <link rel="stylesheet" href="/resources/demos/style.css">[m
+ <link href="http://localhost/greenlife/application/views/theme/greenlife/style.css" type="text/css" rel="stylesheet" />[m
+[32m+[m[32m    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>[m
+[32m+[m[32m    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>[m
+[32m+[m
+[32m+[m[32m    <script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-validator/0.4.5/js/bootstrapvalidator.min.js" type="text/javascript"></script>[m
+[32m+[m
+[32m+[m
+[32m+[m[32m    <style type="text/css" >[m
+[32m+[m[32m    #success_message{ display: none;}</style>[m
+ </head>[m
+ [m
+ <body>[m
+[1mdiff --git a/application/views/theme/greenlife/patient/patient-add.php b/application/views/theme/greenlife/patient/patient-add.php[m
+[1mindex 6a14185..092f1a2 100644[m
+[1m--- a/application/views/theme/greenlife/patient/patient-add.php[m
+[1m+++ b/application/views/theme/greenlife/patient/patient-add.php[m
+[36m@@ -50,7 +50,7 @@[m
+   <div class="col-md-4 inputGroupContainer">[m
+   <div class="input-group">[m
+   <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>[m
+[31m-  <input  name="person_name" placeholder="First Name" class="form-control"  type="text">[m
+[32m+[m[32m  <input  name="name" placeholder="First Name" class="form-control"  type="text" required>[m
+     </div>[m
+   </div>[m
+ </div>[m
+[1mdiff --git a/application/views/theme/greenlife/scrpits/validation.js b/application/views/theme/greenlife/scrpits/validation.js[m
+[1mindex 3321eab..d247626 100644[m
+[1m--- a/application/views/theme/greenlife/scrpits/validation.js[m
+[1m+++ b/application/views/theme/greenlife/scrpits/validation.js[m
+[36m@@ -1,4 +1,104 @@[m
+[31m-/**[m
+[31m- * Created by Future Move IT2 on 11/21/2016.[m
+[31m- */[m
+[31m-alert('hello world');[m
+\ No newline at end of file[m
+[32m+[m[32m$(document).ready(function() {[m
+[32m+[m[32m    $('#contact_form').bootstrapValidator({[m
+[32m+[m[32m        // To use feedback icons, ensure that you use Bootstrap v3.1.0 or later[m
+[32m+[m[32m        feedbackIcons: {[m
+[32m+[m[32m            valid: 'glyphicon glyphicon-ok',[m
+[32m+[m[32m            invalid: 'glyphicon glyphicon-remove',[m
+[32m+[m[32m            validating: 'glyphicon glyphicon-refresh'[m
+[32m+[m[32m        },[m
+[32m+[m[32m        fields: {[m
+[32m+[m[32m            name: {[m
+[32m+[m[32m                validators: {[m
+[32m+[m[32m                    stringLength: {[m
+[32m+[m[32m                        min: 2,[m
+[32m+[m[32m                    },[m
+[32m+[m[32m                    notEmpty: {[m
+[32m+[m[32m                        message: 'Please supply your first name'[m
+[32m+[m[32m                    }[m
+[32m+[m[32m                }[m
+[32m+[m[32m            },[m
+[32m+[m[32m            person_email: {[m
+[32m+[m[32m                validators: {[m
+[32m+[m[32m                    stringLength: {[m
+[32m+[m[32m                        min: 2,[m
+[32m+[m[32m                    },[m
+[32m+[m[32m                    emailAddress: {[m
+[32m+[m[32m                        message: 'The value is not a valid email address'[m
+[32m+[m[32m                    }[m
+[32m+[m[32m                }[m
+[32m+[m[32m            },[m
+[32m+[m
+[32m+[m[32m            person_phone: {[m
+[32m+[m[32m                validators: {[m
+[32m+[m[32m                    stringLength: {[m
+[32m+[m[32m                        min: 11,[m
+[32m+[m
+[32m+[m[32m                    },[m
+[32m+[m[32m                    notEmpty: {[m
+[32m+[m[32m                        message: 'The mobile phone number is not valid'[m
+[32m+[m[32m                    }[m
+[32m+[m[32m                }[m
+[32m+[m[32m            },[m
+[32m+[m[32m            area: {[m
+[32m+[m[32m                validators: {[m
+[32m+[m[32m                    stringLength: {[m
+[32m+[m[32m                        min: 4,[m
+[32m+[m
+[32m+[m[32m                    },[m
+[32m+[m[32m                    notEmpty: {[m
+[32m+[m[32m                        message: 'address is not valid'[m
+[32m+[m[32m                    }[m
+[32m+[m[32m                }[m
+[32m+[m[32m            },[m
+[32m+[m[32m            person_gender: {[m
+[32m+[m[32m                validators: {[m
+[32m+[m[32m                    stringLength: {[m
+[32m+[m
+[32m+[m[32m                    },[m
+[32m+[m[32m                    notEmpty: {[m
+[32m+[m[32m                        message: 'gender is required'[m
+[32m+[m[32m                    }[m
+[32m+[m[32m                }[m
+[32m+[m[32m            },[m
+[32m+[m
+[32m+[m[32m            person_problems: {[m
+[32m+[m[32m                validators: {[m
+[32m+[m[32m                    stringLength: {[m
+[32m+[m
+[32m+[m[32m                    },[m
+[32m+[m[32m                    notEmpty: {[m
+[32m+[m[32m                        message: 'please enter some problem of patient'[m
+[32m+[m[32m                    }[m
+[32m+[m[32m                }[m
+[32m+[m[32m            },[m
+[32m+[m
+[32m+[m
+[32m+[m
+[32m+[m
+[32m+[m
+[32m+[m
+[32m+[m[32m        }[m
+[32m+[m[32m    })[m
+[32m+[m[32m        .on('success.form.bv', function(e) {[m
+[32m+[m[32m            $('#success_message').slideDown({ opacity: "show" }, "slow") // Do something ...[m
+[32m+[m[32m            $('#contact_form').data('bootstrapValidator').resetForm();[m
+[32m+[m
+[32m+[m[32m            // Prevent form submission[m
+[32m+[m[32m            e.preventDefault();[m
+[32m+[m
+[32m+[m[32m            // Get the form instance[m
+[32m+[m[32m            var $form = $(e.target);[m
+[32m+[m
+[32m+[m[32m            // Get the BootstrapValidator instance[m
+[32m+[m[32m            var bv = $form.data('bootstrapValidator');[m
+[32m+[m
+[32m+[m[32m            // Use Ajax to submit form data[m
+[32m+[m[32m            $.post($form.attr('action'), $form.serialize(), function(result) {[m
+[32m+[m[32m                console.log(result);[m
+[32m+[m[32m            }, 'json');[m
+[32m+[m[32m        });[m
+[32m+[m[32m});[m
+[41m+[m
+[41m+[m
+[41m+[m
+[41m+[m
+warning: LF will be replaced by CRLF in .idea/workspace.xml.
+The file will have its original line endings in your working directory.

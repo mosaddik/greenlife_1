@@ -77,7 +77,7 @@
 
 
   <span class="input-group-addon">
-        <input type="file" name="person_image" value="NULL" style="padding: 0px;"><span
+        <input type="file" name="person_image"  style="padding: 0px;"><span
           class="fa fa-folder-open" value="<?php
       echo $doc->image;
       ?>"></span> </span></input>

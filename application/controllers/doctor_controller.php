@@ -103,9 +103,11 @@ class doctor_controller extends CI_Controller {
         $doctor->gender = $this->input->post('doctor_gender');
         $doctor->phone = $this->input->post('doctor_phone');
         $doctor->NID =$this->input->post('person_NID');
+
         $doctor->date_of_birth = date('Y-m-d',strtotime($this->input->post('doctor_date_of_birth')));
         $doctor->specialization = json_encode($this->input->post('specialization'));
         //$doctor->qualification = $this->input->post('doctor_qualification');
+        var_dump($this->input->post('person_image'));
         $doctor->address =$this->input->post('area');
         if($this->input->post('person_image') != 'NULL'){
             $doctor->image =   $image->image_encription($this->input->post('person_image'));
@@ -121,6 +123,7 @@ class doctor_controller extends CI_Controller {
 
 
 
+        /*
         if($state == '1') {
             $this->Doctor_model->add_doctor($doctor, 'update');
             $this->Doctor_model->add_doctor_meta($doctor_meta,'update');
@@ -144,6 +147,8 @@ class doctor_controller extends CI_Controller {
             $this->load->view('theme/greenlife/footer');
 
         }
+        */
+
 
     }
 

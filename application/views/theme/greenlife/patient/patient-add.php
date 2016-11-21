@@ -50,7 +50,7 @@
   <div class="col-md-4 inputGroupContainer">
   <div class="input-group">
   <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-  <input  name="person_name" placeholder="First Name" class="form-control"  type="text">
+  <input  name="name" placeholder="First Name" class="form-control"  type="text" required>
     </div>
   </div>
 </div>
