@@ -5,15 +5,19 @@
  * Date: 11/19/2016
  * Time: 12:50 PM
  */
-require_once('C:\wamp\www\greenlife\application\classes\Doctor.php');
-require_once ('patient.php');
+//require_once('C:\wamp\www\greenlife\application\classes\Doctor.php');
+require_once('application/classes/Doctor.php');
+//require_once ('patient.php');
 class doctor_controller extends CI_Controller {
 
+    public function __construct()
+    {
+        parent::__construct();
+    }
 
     public function index()
     {
         $this->load->model('config_model');
-
         $data['doc'] = $this->config_model->get_config();
 
 
@@ -89,12 +93,13 @@ class doctor_controller extends CI_Controller {
 
     public function save_changes($state='0'){
 
-
+       //$this->load->library('form_validation');
+        //var_dump($_FILES['person_image']['name']);
         $this->load->model('Doctor_model');
         $this->load->model('config_model');
         $data['config'] = $this->config_model->get_config();
         $doctor =  new Doctor();
-        $image = new Patient();
+        //$image = new Patient();
         $doctor_meta =  new doctor_meta();
 
         $doctor->doctor_id = $this->input->post('doctor_id');
@@ -106,12 +111,12 @@ class doctor_controller extends CI_Controller {
 
         $doctor->date_of_birth = date('Y-m-d',strtotime($this->input->post('doctor_date_of_birth')));
         $doctor->specialization = json_encode($this->input->post('specialization'));
-        //$doctor->qualification = $this->input->post('doctor_qualification');
-        var_dump($this->input->post('person_image'));
+         //$doctor->qualification = $this->input->post('doctor_qualification');
+        //var_dump($doctor);
         $doctor->address =$this->input->post('area');
         if($this->input->post('person_image') != 'NULL'){
-            $doctor->image =   $image->image_encription($this->input->post('person_image'));
-            $image->uploadImage($doctor->image);
+            //$doctor->image =   $image->image_encription($this->input->post('person_image'));
+            //$image->uploadImage($doctor->image);
         }
 
         $doctor_meta->doctor = $doctor->doctor_id;

@@ -77,10 +77,9 @@
 
 
   <span class="input-group-addon">
+        <input type="hidden" value="<?php echo $doc->image;?>.jpg"
         <input type="file" name="person_image"  style="padding: 0px;"><span
-          class="fa fa-folder-open" value="<?php
-      echo $doc->image;
-      ?>"></span> </span></input>
+          class="fa fa-folder-open" ></span> </span></input>
                             </span>
                         </div>
                     </div>

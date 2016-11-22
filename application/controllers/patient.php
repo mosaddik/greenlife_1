@@ -1,8 +1,8 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-require_once('C:\wamp\www\greenlife\application\classes\Patient.php');
-require_once('C:\wamp\www\greenlife\application\classes\Patient_Meta.php');
+require_once('application/classes/Patient.php');
+require_once('application/classes/Patient_Meta.php');
 
 
 
@@ -88,12 +88,13 @@ class Patient extends CI_Controller {
 	  	$patient->gender = $this->input->post('person_gender');
 	  	$patient->email = $this->input->post('person_email');
 	  	$patient->date_of_birth =  date('Y-m-d',strtotime($this->input->post('person_date_of_birth')));
-	    $patient->image = $this->input->post('person_image');
+
 	  	$patient->phone = $this->input->post('person_phone');
 	  	//$patient->address = $this->jsonConvert($_POST,'person_address') ;
 	  	$patient->problems = $this->input->post('person_problems');
 	  	$patient->person_address = $this->input->post('area');
 	  	$patient->NID = $this->input->post('person_NID');
+        //var_dump($patient);
 	   // $patient->Patient_Meta->meta_value  = $this->jsonConvert($_POST);
 	    $this->load->model('Patient_model');
 
@@ -101,11 +102,13 @@ class Patient extends CI_Controller {
 	    	'area' => 	$patient->person_address
 	    	);
 	    $patient->address= json_encode($address );
-
+        //var_dump(  $this->input->post('person_image'));
 	    $patient->image = $this->image_encription($patient->image);
         $this->uploadImage($patient->image);
 
+       // var_dump($_FILES);
 
+        /*
 	    if($status== 0){
             $this->Patient_model->update_patient($patient,"save");
 	    }
@@ -125,44 +128,7 @@ class Patient extends CI_Controller {
 
 	}
 
-public function image_encription($image){
-   $image =  $image.date('Y-m-d- H-i-s');
-    return md5($image);
-}
 
-
-    public function uploadImage($image){
-
-
-
-        $config['upload_path']          = './uploads';
-        $config['allowed_types']        = 'png|gif|jpg|';
-        $config['max_size']             = 500;
-        $config['max_width']            = 2000;
-        $config['max_height']           = 2000;
-
-
-        $config['file_name'] = $image;
-
-
-        $this->load->library('upload', $config);
-
-        if ( ! $this->upload->do_upload('person_image'))
-        {
-            $error = array('error' => $this->upload->display_errors());
-
-
-            //$this->load->view('upload_form', $error);
-        }
-        else
-        {
-            $data = array('upload_data' => $this->upload->data());
-
-
-            //$this->load->view('upload_success', $data);
-        }
-
-    }
 
 
 
