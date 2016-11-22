@@ -10,14 +10,10 @@ class Image
 {
     public $image ;
 
-    public function __construct($image)
-    {
-        $this->image  =  $image;
-
-    }
 
 
-    public function image_encription(){
+
+    public function image_encription($image){
 
 
         $image =  $this->image.date('Y-m-d- H-i-s');
@@ -25,7 +21,7 @@ class Image
     }
 
 
-    public function uploadImage(){
+    public function uploadImage($image){
 
         $config['upload_path']          = './uploads';
         $config['allowed_types']        = 'png|gif|jpg|';
@@ -43,14 +39,11 @@ class Image
         {
             $error = array('error' => $this->upload->display_errors());
 
-
             //$this->load->view('upload_form', $error);
         }
         else
         {
             $data = array('upload_data' => $this->upload->data());
-
-
             //$this->load->view('upload_success', $data);
         }
 

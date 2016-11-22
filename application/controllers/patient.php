@@ -3,6 +3,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 require_once('application/classes/Patient.php');
 require_once('application/classes/Patient_Meta.php');
+require_once('application/classes/Image.php');
 
 
 
@@ -103,12 +104,14 @@ class Patient extends CI_Controller {
 	    	);
 	    $patient->address= json_encode($address );
         //var_dump(  $this->input->post('person_image'));
-	    $patient->image = $this->image_encription($patient->image);
-        $this->uploadImage($patient->image);
 
-       // var_dump($_FILES);
 
-        /*
+        $image =  new Image($_FILES['person_image']['name']);
+	    $patient->image = $image->image_encription();
+        $image->uploadImage();
+
+
+
 	    if($status== 0){
             $this->Patient_model->update_patient($patient,"save");
 	    }
